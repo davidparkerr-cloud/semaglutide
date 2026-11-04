@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="Ugk1DppbHR1CIUBSQBCIUTGX8P_BzOPxkAd1Z5DJP3A" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peptide Laboratory Testing: HPLC, Mass Spec, Endotoxin &amp; CoA Guide</title>
+<meta name="description" content="Peptide laboratory testing explained: HPLC purity, mass spectrometry identity, net peptide content, endotoxin, sterility, and how to read a Certificate of Analysis.">
+<meta name="author" content="Peptide Testing Guide">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0b3b4a">
+<link rel="canonical" href="https://semaglutide.up.railway.app/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%AA%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Peptide Testing Guide">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Peptide Laboratory Testing: HPLC, Mass Spec, Endotoxin &amp; CoA Guide">
+<meta property="og:description" content="How peptides are tested for purity, identity, content and safety, and how to read a Certificate of Analysis.">
+<meta property="og:url" content="https://semaglutide.up.railway.app/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Peptide Laboratory Testing: HPLC, Mass Spec, Endotoxin &amp; CoA Guide">
+<meta name="twitter:description" content="How peptides are tested for purity, identity, content and safety, and how to read a Certificate of Analysis.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://semaglutide.up.railway.app/#article",
+      "headline": "Peptide Laboratory Testing: Purity, Identity and Quality Explained",
+      "description": "A clear guide to peptide laboratory testing: HPLC purity, mass spectrometry identity, net peptide content, endotoxin, sterility and Certificates of Analysis.",
+      "inLanguage": "en",
+      "datePublished": "2026-11-04",
+      "dateModified": "2026-11-04",
+      "author": { "@type": "Organization", "name": "Peptide Testing Guide" },
+      "publisher": { "@type": "Organization", "name": "Peptide Testing Guide" },
+      "mainEntityOfPage": "https://semaglutide.up.railway.app/"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://semaglutide.up.railway.app/" },
+        { "@type": "ListItem", "position": 2, "name": "Peptide Laboratory Testing", "item": "https://semaglutide.up.railway.app/#overview" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is peptide laboratory testing?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It is a set of analytical tests, mainly HPLC for purity and mass spectrometry for identity, used to confirm that a peptide is the right molecule, at the stated purity and content, and free from harmful contaminants." } },
+        { "@type": "Question", "name": "What does 98% purity on a peptide CoA mean?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It usually means that 98% of the UV-detected peak area in an HPLC run belongs to the target peptide. It does not mean the vial contains 98% peptide by weight, because water and counter-ions are also present." } },
+        { "@type": "Question", "name": "What is the difference between purity and net peptide content?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Purity describes how much of the peptide material is the correct sequence. Net peptide content describes how much of the total powder weight is peptide at all, as opposed to water, salts and counter-ions such as TFA or acetate." } },
+        { "@type": "Question", "name": "Why is mass spectrometry needed if HPLC already shows a clean peak?",
+          "acceptedAnswer": { "@type": "Answer", "text": "HPLC shows that a sample is mostly one substance but not which substance it is. Mass spectrometry measures molecular weight and confirms identity." } },
+        { "@type": "Question", "name": "What is endotoxin testing?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Endotoxin testing, typically the LAL assay, measures bacterial endotoxin contamination. It matters for any material intended for injection." } },
+        { "@type": "Question", "name": "How can I check that a Certificate of Analysis is genuine?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Check for a named laboratory with contact details, a batch or lot number matching the vial, test dates, the method used, and the raw chromatogram and mass spectrum. Ask the laboratory directly to verify the report." } }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root{
+  --ink:#10242c;--muted:#51656d;--bg:#f4f9fa;--card:#fff;--line:#d5e3e6;
+  --deep:#0b3b4a;--deep2:#0f5568;--accent:#14a38f;--accent-d:#0d7f70;--soft:#e3f4f1;--warn:#fff6e0;--warn-line:#e8c66a;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font:17px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--accent-d)}
+a:hover{color:var(--deep2)}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:var(--deep);padding:10px 14px;z-index:100}
+.skip:focus{left:8px;top:8px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:var(--deep);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.bar{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:700;font-size:1.1rem}
+.brand .logo{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--accent),#5fe0cd);display:grid;place-items:center;font-size:1.1rem}
+nav.main ul{list-style:none;margin:0;padding:0;display:flex;gap:4px}
+nav.main a{display:block;color:#d6eef0;text-decoration:none;padding:8px 12px;border-radius:8px;font-size:.95rem}
+nav.main a:hover{background:rgba(255,255,255,.12);color:#fff}
+#nav-toggle{display:none}
+.burger{display:none;cursor:pointer;padding:8px 12px;border:1px solid rgba(255,255,255,.35);border-radius:8px;font-size:.95rem}
+
+/* hero */
+.hero{background:radial-gradient(circle at 85% 20%,rgba(20,163,143,.35),transparent 45%),linear-gradient(135deg,var(--deep),var(--deep2));color:#fff;padding:64px 0 56px}
+.eyebrow{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:4px 12px;border-radius:99px;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase}
+.hero h1{font-size:clamp(2rem,4.6vw,3.1rem);line-height:1.15;margin:16px 0 14px;max-width:820px}
+.hero p.lead{font-size:1.15rem;max-width:760px;color:#dff2f3;margin:0 0 24px}
+.hero a{color:#7ff0dd}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.primary:hover{background:var(--accent-d);color:#fff}
+.btn.ghost{border:1px solid rgba(255,255,255,.5);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12);color:#fff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}
+.stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:var(--radius);padding:16px}
+.stat b{display:block;font-size:1.5rem;color:#7ff0dd}
+.stat span{font-size:.88rem;color:#dff2f3}
+
+/* layout */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:32px;padding:36px 0 56px;align-items:start}
+.crumbs{font-size:.88rem;color:var(--muted);margin-bottom:12px}
+.crumbs a{color:var(--muted)}
+article section{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px 30px;margin-bottom:22px}
+article h2{margin:0 0 12px;font-size:1.55rem;line-height:1.25;color:var(--deep);border-left:5px solid var(--accent);padding-left:12px}
+article h3{margin:22px 0 6px;color:var(--deep2);font-size:1.15rem}
+article p{margin:0 0 14px}
+article ul,article ol{padding-left:22px;margin:0 0 14px}
+article li{margin-bottom:6px}
+.callout{background:var(--soft);border-left:4px solid var(--accent);padding:14px 16px;border-radius:8px;margin:16px 0}
+.callout.warn{background:var(--warn);border-left-color:var(--warn-line)}
+.tablewrap{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--deep);color:#fff;font-weight:600}
+tr:nth-child(even) td{background:#f4fafb}
+details{border:1px solid var(--line);border-radius:10px;padding:0 16px;margin-bottom:10px;background:#fbfefe}
+summary{cursor:pointer;font-weight:600;padding:14px 0;color:var(--deep)}
+details[open] summary{border-bottom:1px solid var(--line);margin-bottom:10px}
+
+/* sidebar */
+aside.side{position:sticky;top:84px;display:grid;gap:18px}
+.widget{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.widget h2{margin:0 0 10px;font-size:1.05rem;color:var(--deep);text-transform:uppercase;letter-spacing:.05em}
+.widget ul{list-style:none;margin:0;padding:0}
+.widget li{border-bottom:1px solid var(--line);padding:7px 0;font-size:.95rem}
+.widget li:last-child{border:0}
+.widget li a{text-decoration:none}
+.facts li{display:flex;justify-content:space-between;gap:10px}
+.facts li span{color:var(--muted)}
+.cta{background:linear-gradient(135deg,var(--deep),var(--deep2));color:#fff;border:0}
+.cta h2{color:#fff}
+.cta p{font-size:.95rem;color:#dff2f3;margin:0 0 12px}
+.cta a.btn{display:block;text-align:center}
+.cta p a{color:#7ff0dd}
+
+/* footer */
+footer.site{background:var(--deep);color:#cfe6e9;padding:44px 0 22px;font-size:.95rem}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:32px}
+footer h2{color:#fff;font-size:1.05rem;margin:0 0 10px}
+footer ul{list-style:none;margin:0;padding:0}
+footer li{margin-bottom:6px}
+footer a{color:#9ee9dc}
+footer a:hover{color:#fff}
+.legal{border-top:1px solid rgba(255,255,255,.18);margin-top:28px;padding-top:16px;font-size:.85rem;color:#a9c9ce}
+
+@media(max-width:960px){
+  .layout{grid-template-columns:1fr}
+  aside.side{position:static}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .fgrid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .burger{display:block}
+  nav.main{display:none;position:absolute;left:0;right:0;top:64px;background:var(--deep2);padding:10px 20px}
+  nav.main ul{flex-direction:column}
+  #nav-toggle:checked ~ nav.main{display:block}
+  article section{padding:22px 18px}
+}
+</style>
+</head>
+
+<body id="top">
+<a class="skip" href="#main">Skip to main content</a>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Peptide Testing Guide home"><span class="logo" aria-hidden="true">&#129514;</span>Peptide Testing Guide</a>
+    <input type="checkbox" id="nav-toggle" aria-label="Toggle menu">
+    <label for="nav-toggle" class="burger">&#9776; Menu</label>
+    <nav class="main" aria-label="Primary">
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#tests">Core Tests</a></li>
+        <li><a href="#coa">Reading a CoA</a></li>
+        <li><a href="#semaglutide">Semaglutide</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <span class="eyebrow">Analytical Chemistry &middot; Quality Control</span>
+    <h1 id="h1">Peptide Laboratory Testing: Purity, Identity and Quality Explained</h1>
+    <p class="lead">Every reliable peptide starts with data. Learn how <a href="https://semaglutidecostarica.com/">peptide laboratory testing</a> confirms what a molecule is, how pure it is, and whether it is safe from contaminants, and how to read the report that comes with it.</p>
+    <div class="btns">
+      <a class="btn primary" href="#tests">See the core tests</a>
+      <a class="btn ghost" href="#faq">Jump to FAQ</a>
+    </div>
+    <div class="stats" role="list">
+      <div class="stat" role="listitem"><b>HPLC</b><span>measures purity</span></div>
+      <div class="stat" role="listitem"><b>LC-MS</b><span>confirms identity</span></div>
+      <div class="stat" role="listitem"><b>LAL</b><span>detects endotoxin</span></div>
+      <div class="stat" role="listitem"><b>CoA</b><span>documents every batch</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap layout">
+<main id="main">
+<article>
+  <p class="crumbs"><a href="#top">Home</a> &rsaquo; Peptide Laboratory Testing</p>
+
+  <section id="overview" aria-labelledby="t-overview">
+    <h2 id="t-overview">What Is Peptide Laboratory Testing?</h2>
+    <p><a href="https://semaglutidecostarica.com/">Peptide laboratory testing</a> is the group of analytical methods used to verify a synthetic peptide batch. A peptide is a short chain of amino acids made by solid-phase synthesis, then cleaved, purified and freeze-dried. Each of those steps can leave behind errors: truncated sequences, deletion sequences, residual solvents, salts or microbial contamination.</p>
+    <p>A proper test panel answers four questions:</p>
+    <ul>
+      <li><strong>Identity:</strong> is it the correct molecule?</li>
+      <li><strong>Purity:</strong> how much of the material is the correct sequence?</li>
+      <li><strong>Content:</strong> how much of the powder is actually peptide?</li>
+      <li><strong>Safety:</strong> is it free from endotoxin, microbes and toxic residues?</li>
+    </ul>
+    <div class="callout"><strong>In short:</strong> a clean, independent laboratory report turns a label claim into verifiable evidence.</div>
+  </section>
+
+  <section id="tests" aria-labelledby="t-tests">
+    <h2 id="t-tests">Core Tests Used for Peptides</h2>
+    <p>The table below summarises the standard analytical methods and what each one tells you.</p>
+    <div class="tablewrap">
+      <table>
+        <caption class="sr-only" style="position:absolute;left:-999px">Common peptide tests and their purpose</caption>
+        <thead><tr><th scope="col">Test</th><th scope="col">Method</th><th scope="col">What it shows</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Purity</th><td>RP-HPLC with UV detection (about 214&ndash;220 nm)</td><td>Percentage of peak area from the target peptide versus impurities</td></tr>
+          <tr><th scope="row">Identity</th><td>LC-MS, ESI-MS or MALDI-TOF</td><td>Measured molecular weight compared with the theoretical value</td></tr>
+          <tr><th scope="row">Net peptide content</th><td>Amino acid analysis or nitrogen analysis</td><td>Share of total weight that is peptide rather than water or salts</td></tr>
+          <tr><th scope="row">Water content</th><td>Karl Fischer titration</td><td>Residual moisture in the lyophilised powder</td></tr>
+          <tr><th scope="row">Counter-ion</th><td>Ion chromatography or HPLC</td><td>TFA or acetate content in the salt form</td></tr>
+          <tr><th scope="row">Endotoxin</th><td>LAL assay</td><td>Bacterial endotoxin level, critical for injectables</td></tr>
+          <tr><th scope="row">Sterility</th><td>Membrane filtration or direct inoculation</td><td>Presence of viable microorganisms</td></tr>
+          <tr><th scope="row">Residual solvents and metals</th><td>GC and ICP-MS</td><td>Leftover synthesis solvents and elemental impurities</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Purity is not the same as content</h3>
+    <p>A report showing 98% HPLC purity does not mean the vial holds 98% peptide by weight. Lyophilised peptides normally contain water and counter-ions, so net peptide content is often well below 100%. Always look at both numbers.</p>
+
+    <h3>Why identity needs its own test</h3>
+    <p>HPLC shows that a sample is mostly one substance, not which substance. Mass spectrometry measures molecular weight and is the standard way to confirm identity.</p>
+  </section>
+
+  <section id="coa" aria-labelledby="t-coa">
+    <h2 id="t-coa">How to Read a Certificate of Analysis (CoA)</h2>
+    <p>A Certificate of Analysis is the summary document for a batch. Use this checklist when reviewing one:</p>
+    <ol>
+      <li><strong>Laboratory details:</strong> a named lab with address and contact information.</li>
+      <li><strong>Batch or lot number:</strong> it must match the product in your hands.</li>
+      <li><strong>Test dates:</strong> recent and consistent with the manufacturing date.</li>
+      <li><strong>Methods listed:</strong> HPLC conditions, MS type, and any compendial references.</li>
+      <li><strong>Raw data:</strong> the actual chromatogram and mass spectrum, not just a table of results.</li>
+      <li><strong>Specification limits:</strong> pass or fail criteria stated next to each result.</li>
+    </ol>
+    <div class="callout warn"><strong>Red flags:</strong> no batch number, a screenshot instead of a report, identical reports for different lots, missing chromatograms, or a laboratory that cannot be contacted. When in doubt, ask the laboratory to verify the report directly.</div>
+  </section>
+
+  <section id="semaglutide" aria-labelledby="t-sema">
+    <h2 id="t-sema">Testing Example: Semaglutide</h2>
+    <p>Large peptides show why thorough analysis matters. <a href="https://semaglutidecostarica.com/">Semaglutide</a> is a GLP-1 receptor agonist peptide with a molecular weight of roughly 4,113.6 Da and a fatty-acid side chain attached to the backbone. That modification makes it more complex to synthesise and to analyse than a simple linear peptide.</p>
+    <p>For a semaglutide batch, a laboratory would typically check:</p>
+    <ul>
+      <li><strong>Identity:</strong> mass spectrometry matched against the expected molecular weight.</li>
+      <li><strong>Purity profile:</strong> HPLC separating the main peak from related substances.</li>
+      <li><strong>Content:</strong> net peptide content, not only chromatographic purity.</li>
+      <li><strong>Safety tests:</strong> endotoxin and sterility for material intended for injection.</li>
+    </ul>
+    <p>Semaglutide is a prescription medicine in most countries. This page covers analytical testing only and is not guidance on use or purchase.</p>
+  </section>
+
+  <section id="process" aria-labelledby="t-process">
+    <h2 id="t-process">How a Peptide Sample Moves Through the Lab</h2>
+    <ol>
+      <li><strong>Sample receipt:</strong> logging, labelling and chain of custody.</li>
+      <li><strong>Preparation:</strong> accurate weighing and dissolution in a suitable solvent.</li>
+      <li><strong>Separation and detection:</strong> HPLC run, followed by mass spectrometry.</li>
+      <li><strong>Safety panel:</strong> endotoxin, sterility and residual testing where required.</li>
+      <li><strong>Review and report:</strong> a second analyst checks data before the CoA is issued.</li>
+    </ol>
+    <p>Look for laboratories working under quality systems such as ISO/IEC 17025 accreditation or GMP, since these require validated methods and traceable records.</p>
+  </section>
+
+  <section id="faq" aria-labelledby="t-faq">
+    <h2 id="t-faq">Frequently Asked Questions</h2>
+    <details><summary>What is peptide laboratory testing?</summary>
+      <p>It is a set of analytical tests, mainly HPLC for purity and mass spectrometry for identity, used to confirm that a peptide is the right molecule, at the stated purity and content, and free from harmful contaminants.</p></details>
+    <details><summary>What does 98% purity on a peptide CoA mean?</summary>
+      <p>It usually means that 98% of the UV-detected peak area in an HPLC run belongs to the target peptide. It does not mean the vial contains 98% peptide by weight, because water and counter-ions are also present.</p></details>
+    <details><summary>What is the difference between purity and net peptide content?</summary>
+      <p>Purity describes how much of the peptide material is the correct sequence. Net peptide content describes how much of the total powder weight is peptide at all, as opposed to water, salts and counter-ions such as TFA or acetate.</p></details>
+    <details><summary>Why is mass spectrometry needed if HPLC already shows a clean peak?</summary>
+      <p>HPLC shows that a sample is mostly one substance but not which substance it is. Mass spectrometry measures molecular weight and confirms identity.</p></details>
+    <details><summary>What is endotoxin testing?</summary>
+      <p>Endotoxin testing, typically the LAL assay, measures bacterial endotoxin contamination. It matters for any material intended for injection.</p></details>
+    <details><summary>How can I check that a Certificate of Analysis is genuine?</summary>
+      <p>Check for a named laboratory with contact details, a batch or lot number matching the vial, test dates, the method used, and the raw chromatogram and mass spectrum. Ask the laboratory directly to verify the report.</p></details>
+    <div class="callout warn"><strong>Educational notice:</strong> this page is for general information only. It is not medical, pharmaceutical or legal advice. Consult a qualified professional before making any health decision.</div>
+  </section>
+</article>
+</main>
+
+<aside class="side" aria-label="Sidebar">
+  <div class="widget">
+    <h2>On This Page</h2>
+    <ul>
+      <li><a href="#overview">What Is Peptide Testing?</a></li>
+      <li><a href="#tests">Core Tests</a></li>
+      <li><a href="#coa">Reading a CoA</a></li>
+      <li><a href="#semaglutide">Semaglutide Example</a></li>
+      <li><a href="#process">Lab Workflow</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </div>
+  <div class="widget">
+    <h2>Quick Facts</h2>
+    <ul class="facts">
+      <li>Purity <span>RP-HPLC</span></li>
+      <li>Identity <span>LC-MS</span></li>
+      <li>Content <span>AAA / N analysis</span></li>
+      <li>Endotoxin <span>LAL assay</span></li>
+      <li>Report <span>CoA per batch</span></li>
+    </ul>
+  </div>
+  <div class="widget cta">
+    <h2>Learn More</h2>
+    <p>Explore resources on <a href="https://semaglutidecostarica.com/">semaglutide</a> and regional information.</p>
+    <a class="btn primary" href="https://semaglutidecostarica.com/">Semaglutide</a>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h2>Peptide Testing Guide</h2>
+        <p>An independent educational resource on <a href="https://semaglutidecostarica.com/">peptide laboratory testing</a>: methods, reports and quality control.</p>
+      </div>
+      <div>
+        <h2>On This Site</h2>
+        <ul>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#tests">Core Tests</a></li>
+          <li><a href="#coa">Reading a CoA</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="https://semaglutidecostarica.com/">Semaglutide</a></li>
+          <li><a href="https://semaglutidecostarica.com/">Peptide laboratory testing</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">Disclaimer: content is for educational purposes only and is not medical, pharmaceutical or legal advice. Semaglutide is a prescription medicine; consult a qualified healthcare professional before use.<br>&copy; 2026 Peptide Testing Guide. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
